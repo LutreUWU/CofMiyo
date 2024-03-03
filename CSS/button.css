@@ -37,3 +37,14 @@ body{
     width: 100%;
     transition: all 0.7s ease-in-out;
 }
+
+ul{
+    font-family: "Noto serif";
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+

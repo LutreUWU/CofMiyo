@@ -3,7 +3,7 @@ const button = document.getElementById("button")
         button.style.display = "none";
         const IntroDiv = document.getElementById("Intro");
         videoID = videoBG(IntroDiv);
-        two = false, four = false, six = false, eight = false, ten = false, twelve = false, fourteen = false, sixteen = false, twenty = false, twentyfive = false;
+        two = false, four = false, six = false, eight = false, ten = false, twelve = false, fourteen = false, sixteen = false, eighteen = false, twentyfour = false;
         videoID.addEventListener('timeupdate', function() {
             if (videoID.currentTime >= 2 && two == false) {
                 two = true;
@@ -47,26 +47,25 @@ const button = document.getElementById("button")
                 divText[1].style.filter = "blur(5px)";
             }
 
-            if (videoID.currentTime >= 19 && twenty == false){
-                twenty = true;
+            if (videoID.currentTime >= 19 && eighteen == false){
+                eighteen = true;
                 videoID.style.filter = "brightness(0.5) blur(10px)";
                 Logo(IntroDiv);
             }
 
-            if (videoID.currentTime >= 24 && twentyfive == false){
-                twentyfive = true;
+            if (videoID.currentTime >= 24 && twentyfour == false){
+                twentyfour = true;
                 
                 animation = document.getElementById("CreditID");
                 animation.style.animation = "translate 120s linear forwards";
                 Credits(allIMG);
             }
 
-            if (videoID.currentTime >=26){
+            if (videoID.currentTime >= 26){
                 LogoDiv = document.getElementById("LogoDiv");
                 LogoDiv.style.transform = "translate(-50%,-50%) scale(0)";
                 LogoDiv.style.opacity = 0;
                 videoID.removeEventListener('timeupdate', arguments.callee);
-
             }
         });
     });
@@ -205,10 +204,10 @@ const allIMG = [
     
     
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/EspagnolLV20.jpg",
-    "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/FanFinctionMath pt1.png",
-    "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/FanFinctionMath pt1.jpg",
+    "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/FanFictionMath pt1.jpg",
+    "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/FanFictionMath pt2.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/Friscobranleur.jpg",
-    "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/MasterclassFrancais.jpg",
+    "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/MasterClassFrançais.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/MattFlopEspagnol.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/ModdoRaciste.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Examen/PoultriTropForte.jpg",
@@ -219,7 +218,6 @@ const allIMG = [
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison3.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison4.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison5.png",
-    "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison6.png",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison7.jpg",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison7.png",
     "./Classroom of Miyoversee Janvier-Fevrier 2024/Prison/Prison8.jpg",
@@ -267,8 +265,8 @@ const Credits = function(allIMG){
             CreditRight.appendChild(imgDiv);
         }
     }
-    CreditLeft.style.animation = "translate 240s linear forwards";
-    CreditRight.style.animation = "translate 240s linear forwards";
+    CreditLeft.style.animation = "translate 243s ease forwards";
+    CreditRight.style.animation = "translate 243s ease forwards";
     document.body.appendChild(CreditLeft);
     document.body.appendChild(CreditRight);
 };

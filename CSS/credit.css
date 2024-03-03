@@ -83,6 +83,8 @@
     margin: auto;
     text-align: center;
     font-size: 1em;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    letter-spacing: 1px;
 }
 
 @keyframes translate {
