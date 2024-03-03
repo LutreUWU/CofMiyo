@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.Button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20vw;
+    height: 15vh;
+    border: solid 2px white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto serif";
+    font-size: 3em;
+    transition:
+        background-color 0.4s,
+        color 0.4s,
+        letter-spacing 0.4s;
+
+}
+
+.Button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.videoBG{
+    position: absolute;
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+}

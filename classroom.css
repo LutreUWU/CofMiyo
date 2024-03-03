@@ -1,0 +1,65 @@
+.IntroductionDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+    height: 7vh;
+    overflow: hidden;
+    animation: transitionText 1s;
+    transition: all 1.5s ease-in-out;
+}
+
+.IntroductionDiv::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    animation: trait 0.5s ease-in-out forwards;
+    animation-delay: 1.1s;
+} 
+
+.Text{
+    color: white;
+    font-family: "Noto serif";
+    font-size: 3em;
+    transition: transform 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.Text p{
+    margin: 0;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes transitionText {
+    from{
+        top:55%;
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes trait {
+    from{
+        width: 0%;
+        border: 2px inset white;
+    }
+
+    to{
+        width: 100%;
+        border: 2px inset white;
+
+    }
+    
+}

@@ -1,0 +1,97 @@
+.CreditDiv{
+    position: absolute;
+    top:100%;
+    width: 100vw;
+    height: fit-content;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.CreditDiv h1{
+    color: goldenrod;
+    text-shadow: 0 0 2px white;
+    letter-spacing: 2px;
+    margin: auto;
+    width: fit-content;
+    border-bottom: 2px double goldenrod;
+}
+
+.CreditDiv h2{
+    letter-spacing: 2px;
+    margin: auto;
+    margin-top:2%;
+    text-decoration: underline;
+    width: fit-content;
+    color: brown;
+}
+
+.CreditDiv h3{
+    letter-spacing: 2px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: fit-content;
+    color: white;
+}
+
+
+.CreditLeft{
+    position: absolute;
+    top:100%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.CreditRight{
+    position: absolute;
+    top:100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 40%;
+}
+.CreditImgDiv{
+    width: 50%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.CreditImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top: 4px solid #e3017e;
+    border-right: 4px solid #e3017e;
+    border-bottom: 4px solid #9f033b;
+    border-left: 4px solid #9f033b;
+
+}
+
+.CreditImgDiv p{
+    color: white;
+    text-shadow: 0 0 1px black;
+    font-weight: bold;
+    bottom: -6vh;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+@keyframes translate {
+    from{
+    }
+    to{
+        top: 0;
+        transform: translateY(-100%);
+    }
+    
+}
+
