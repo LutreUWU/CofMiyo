@@ -20,71 +20,166 @@
 </head>
 <body>
     <!--Button introduction-->
-    <section style="display:block">
+    <section style="display:block" id="ButtonDiv">
         <div class="Button" id="button">
             Démarrez
         </div>
         <ul>
             Avant de lancer
             <li>Mettre le volume windows vers 30%</li>
-            <li>Ne pas changez de fenêtre</li>
+            <li>Ne pas changer de fenêtre</li>
             <li>F11 pour fullscreen</li>
         </ul>
     </section>
     <!--Script de la vidéo-->
-    <script src="script.js"></script>
     <section id="Intro"></section>
     <!--Crédit-->
     <section >
         <div class="CreditDiv" id="CreditID">
-            <h1 class="TitleCredit">Un event Discord crée par LeCrapuleux</h2>
-            <h2 class="SubTitleCredit">Classe A (Anciennement B)</h3>
-                <h3 class="NameCredit">Bouloche (≃ 10.8/20)</h3>
-                <h3 class="NameCredit">Gandora (≃ 6/20)</h3>
-                <h3 class="NameCredit">Poultricieux (≃ 15.14/20)</h3>
-                <h3 class="NameCredit">Seoniji (≃ 13/20)</h3>
-                <h3 class="NameCredit">Anzzai (≃ 10/20)</h3>
-                <h3 class="NameCredit">Moddo (≃ 11.8/20)</h3>
-                <h3 class="NameCredit">Nicelec (≃ 11.14/20)</h3>
-                <h3 class="NameCredit">Slovel (≃ 15.86/20)</h3>
-                <h3 class="NameCredit">T2PI (≃ 7.86/20)</h3>
-                <h3 class="NameCredit">Lulu (≃ 15.29/20)</h3>
-                <h3 class="NameCredit">Bladie (≃ 6.67/20)</h3>
-            <h2 class="SubTitleCredit">Classe B (Anciennement A)</h3>
-                <h3 class="NameCredit">BlazedSora (≃ 14.4/20)</h3>
-                <h3 class="NameCredit">Eiko (≃ 9.5/20)</h3>
-                <h3 class="NameCredit">Matt (≃ 9.5/20)</h3>
-                <h3 class="NameCredit">Yano (≃ 15/20)</h3>
-                <h3 class="NameCredit">Gab &lt;3 (≃ 15/20)</h3>
-                <h3 class="NameCredit">Astral (≃ 8.2/20)</h3>
-                <h3 class="NameCredit">Paul (REDOUBLE)</h3>
-                <h3 class="NameCredit">Eva (REDOUBLE)</h3>
-                <h3 class="NameCredit">Goldwin (≃ 9.67/20)</h3>
-                <h3 class="NameCredit">Nyvox (≃ 14.14/20)</h3>
-            <h2 class="SubTitleCredit">Classe C (Les racistes)</h3>
-                <h3 class="NameCredit">Zaphkiel (REDOUBLE)</h3>
-                <h3 class="NameCredit">Davideuh (≃ 17)</h3>
-                <h3 class="NameCredit">Koalajoe (≃ 16.86)</h3>
-                <h3 class="NameCredit">Gammandi (≃ 11.75)</h3>
-                <h3 class="NameCredit">andeol (REDOUBLE)</h3>
-                <h3 class="NameCredit">big mom (REDOUBLE)</h3>
-                <h3 class="NameCredit">Sucre (REDOUBLE)</h3>
-                <h3 class="NameCredit">Xeno (REDOUBLE)</h3>
-                <h3 class="NameCredit">Agathe(REDOUBLE)</h3>
-                <h3 class="NameCredit">Blade (REDOUBLE)</h3>
-            <h2 class="SubTitleCredit">Classe D (FC Clown)</h3>
-                <h3 class="NameCredit">Salt (≃ 4.67/20)</h3>
-                <h3 class="NameCredit">Gyotre (≃ 5.75/20)</h3>
-                <h3 class="NameCredit">Chomeur (REDOUBLE)</h3>
-                <h3 class="NameCredit">Equinox (≃ 8/20)</h3>
-                <h3 class="NameCredit">Frisco (≃ 2.33/20)</h3>
-                <h3 class="NameCredit">Sunglow (REDOUBLE)</h3>
-                <h3 class="NameCredit">Ilyou (REDOUBLE)</h3>
-                <h3 class="NameCredit">Lanius (≃ 8.75/20)</h3>
-                <h3 class="NameCredit">Ravagé (REDOUBLE)</h3>
-                <h3 class="NameCredit">JingYuan (≃ 5.67/20)</h3>
+            <h1 class="TitleCredit">Un event Discord crée par LeCrapuleux</h1>
+            <section id="AllClasse">
+                <h2 class="SubTitleCredit">Classe A (Anciennement B)</h3>
+                    <h4 style="display:none">Bouloche (≃ 10.8/20)</h4>
+                    <h4 style="display:none">Gandora (≃ 6/20)</h4>
+                    <h4 style="display:none">Poultricieux (≃ 15.14/20)</h4>
+                    <h4 style="display:none">Seoniji (≃ 13/20)</h4>
+                    <h4 style="display:none">Anzzai (≃ 10/20)</h4>
+                    <h4 style="display:none">Moddo (≃ 11.8/20)</h4>
+                    <h4 style="display:none">Nicelec (≃ 11.14/20)</h4>
+                    <h4 style="display:none">Slovel (≃ 15.86/20)</h4>
+                    <h4 style="display:none">T2PI (≃ 7.86/20)</h4>
+                    <h4 style="display:none">Lulu (≃ 15.29/20)</h4>
+                    <h4 style="display:none">Bladie (≃ 6.67/20)</h4>
+                <h2 class="SubTitleCredit">Classe B (Anciennement A)</h4>
+                    <h4 style="display:none">BlazedSora (≃ 14.4/20)</h4>
+                    <h4 style="display:none">Eiko (≃ 9.5/20)</h4>
+                    <h4 style="display:none">Matt (≃ 9.5/20)</h4>
+                    <h4 style="display:none">Yano (≃ 15/20)</h4>
+                    <h4 style="display:none">Gab1 &lt;3 (≃ 15/20)</h4>
+                    <h4 style="display:none">Astral (≃ 8.2/20)</h4>
+                    <h4 style="display:none">Paul (REDOUBLE)</h4>
+                    <h4 style="display:none">Eva (REDOUBLE)</h4>
+                    <h4 style="display:none">Goldwin (≃ 9.67/20)</h4>
+                    <h4 style="display:none">Nyvox (≃ 14.14/20)</h4>
+                <h2 class="SubTitleCredit">Classe C (Les racistes)</h4>
+                    <h4 style="display:none">Zaphkiel (REDOUBLE)</h4>
+                    <h4 style="display:none">Davideuh (≃ 17)</h4>
+                    <h4 style="display:none">Koalajoe (≃ 16.86)</h4>
+                    <h4 style="display:none">Gammandi (≃ 11.75)</h4>
+                    <h4 style="display:none">andeol (REDOUBLE)</h4>
+                    <h4 style="display:none">big mom (REDOUBLE)</h4>
+                    <h4 style="display:none">Sucre (REDOUBLE)</h4>
+                    <h4 style="display:none">Xeno (REDOUBLE)</h4>
+                    <h4 style="display:none">Agathe (REDOUBLE)</h4>
+                    <h4 style="display:none">Blade (REDOUBLE)</h4>
+                <h2 class="SubTitleCredit">Classe D (FC Clown)</h4>
+                    <h4 style="display:none">Salt (≃ 4.67/20)</h4>
+                    <h4 style="display:none">Gyotre (≃ 5.75/20)</h4>
+                    <h4 style="display:none">Chomeur (REDOUBLE)</h4>
+                    <h4 style="display:none">Equinox (≃ 8/20)</h4>
+                    <h4 style="display:none">Frisco (≃ 2.33/20)</h4>
+                    <h4 style="display:none">Sunglow (REDOUBLE)</h4>
+                    <h4 style="display:none">Ilyou (REDOUBLE)</h4>
+                    <h4 style="display:none">Lanius (≃ 8.75/20)</h4>
+                    <h4 style="display:none">Ravagé (REDOUBLE)</h4>
+                    <h4 style="display:none">JingYuan (≃ 5.67/20)</h4>
+            </section>
+                <h2 class="SubTitleCredit">Evenement 1: Election des délégués</h2>
+                    <h3 class="EventCredit" style="margin-top:2%">L'event a pour but d'élire des délégués tout simplement</h3>
+                    <div style="position:relative">
+                        <h3 class="EventCredit">Néanmoins il fallait que TOUT les élèves votent la même personne, si une personne votait non, alors la personne n'est pas élu</h3>
+                        <video style="transform: rotate(-10deg);left:5%;" class="VideoEvent" src="./videoEvent/event1.mp4" autoplay muted></video>
+                    </div>
+                    <h3 class="EventCredit">On pouvait aussi trafiquer les votes en corrompant le directeur ...</h3>
+                    <h3 class="EventCredit" style="text-decoration:underline">Résultat délégués :</h3>
+                    <ul style="list-style-type:square">
+                        <li>Classe A: Slovel2.5 (Majorité)</li>
+                        <li>Classe B: Astral (Majorité)</li>
+                        <li>Classe C: Koalajoe (A payé le directeur)</li>
+                        <li>Classe D: Lulu / Lanius (Majorité)</li>
+                    </ul>
+                <h2 class="SubTitleCredit">Evenement 2: Intru</h2>
+                    <h3 class="EventCredit" style="margin-top:2%">Dans chaque classe, un élève était désigné comme le VIP en MP.</h3>
+                    <div style="position:relative">
+                        <h3 class="EventCredit">4 groupes sont crées mélangeant toutes les classes:</h3>
+                        <video style="transform: rotate(5deg);right:5%;" class="VideoEvent" src="./videoEvent/event2.mp4" autoplay muted></video>
+                    </div>
+                    <ul style="list-style-type:square">
+                        <li>Objectif du groupe: Trouver les 4 VIP.</li>
+                        <li>Objectif du VIP: Ne pas se faire démasquer.</li>
+                    </ul>
+                    <h3 class="EventCredit">On pouvait aussi trouver les 4 VIP seule en allant DM le directeur avec nos pronostics.</h3>
+                    <h3 class="EventCredit">Pour trouver les VIP, les VIP reçevaient en mp des actions à faire (Par exemple se taper avec un mec)</h3>
+                    <h3 class="EventCredit" style="text-decoration:underline">Résultat VIP :</h3>
+                    <ul style="list-style-type:square">
+                        <li>Groupe 1: Moddo VIP</li>
+                        <li>Groupe 2: Equinox VIP</li>
+                        <li>Groupe 3: Koalajoe VIP</li>
+                        <li>Groupe 4: Astral VIP</li>
+                    </ul>
+                    <h3 class="EventCredit">Mention honorable à Davideuh qui est le seul à avoir trouvé les 4 VIP en solo.</h3>
+                    <h2 class="SubTitleCredit">Evenement 3: Poker</h2>
+                    <h3 class="EventCredit" style="margin-top:2%">Chaque classe devait désigner un élève pour représenter la classe</h3>
+                    <div style="position:relative">
+                        <h3 class="EventCredit">Les élèves désignés vont ensuite s'affronter dans un poker pour élire le vainqueur !</h3>
+                        <video style="transform: rotate(-8deg);left:6%;" class="VideoEvent" src="./videoEvent/event3.mp4" autoplay muted></video>
+                    </div>
+                    <h3 class="EventCredit" style="text-decoration:underline">Résultat Poker (msk je sais pas) :</h3>
+                    <ul style="list-style-type:square">
+                        <li>Groupe 1:</li>
+                        <li>Groupe 2:</li>
+                        <li>Groupe 3:</li>
+                        <li>Groupe 4:</li>
+                    </ul>
+                <h2 class="SubTitleCredit">Evenement 4: Examen</h2>
+                    <h3 class="EventCredit" style="margin-top:2%">Chaque classe devait rédiger un examen de 50 questions mélangeant l'univers HSR & Genshin & HI3</h3>
+                    <div style="position:relative">
+                        <h3 class="EventCredit">Ensuite chaque classe se voyait attribuer aléatoirement un examen rédigé par une des autres classes</h3>
+                        <video style="transform: rotate(6deg);right:7%;" class="VideoEvent" src="./videoEvent/event4.mp4" autoplay muted></video>
+                    </div>
+                    <h3 class="EventCredit">L'objectif est d'obtenir la moyenne sur cet examen par groupe de 2, sinon vous perdez l'intégralité de votre argent</h3>
+                    <h3 class="EventCredit" style="text-decoration:underline">Résultat Examen (M'en rappelle plus):</h3>
+                    <ul style="list-style-type:square">
+                        <li>Groupe 1:</li>
+                        <li>Groupe 2:</li>
+                        <li>Groupe 3:</li>
+                        <li>Groupe 4:</li>
+                    </ul>
+                <h2 class="SubTitleCredit">Evenement 5: Blind Test</h2>
+                    <div style="position:relative">
+                        <h3 class="EventCredit" style="margin-top:2%">Evénement replissage, y a des openings faut trouver l'animé (C'est AMQ grosso modo)</h3>
+                        <img style="transform: rotate(-5deg);left:4%;" class="VideoEvent" src="./videoEvent/event5.jpg">
+                    </div>
+                    <h3 class="EventCredit" style="text-decoration:underline">Résultat Blind Test</h3>
+                    <ul style="list-style-type:square">
+                        <li>1er : Frisco</li>
+                        <li>2ème : Slovel2.5</li>
+                        <li>3ème: Davideuh</li>
+                    </ul>
+                <h2 class="SubTitleCredit">Evenement 6: Festival !</h2>
+                    <h3 class="EventCredit" style="margin-top:2%">Le dernier évènement de Classroom of Miyoversee ! 4 épreuves sont présentés :</h3>
+                    <ul style="list-style-type:square">
+                        <li>Sport: 1vs1 Echec</li>
+                        <li>Dessin: Tu dessines ton plus beau dessin</li>
+                        <li>Cuisine: Tu cuisines ton meilleur plat</li>
+                        <li>Musique: Tu chantes ta meilleure chanson</li>
+                        <li>Quizz: Tu réponds à des questions</li>
+                    </ul>
+                    <div style="position:relative">
+                        <h3 class="EventCredit">Chaque classe choisit 1 élève pour représenter une épreuve.</h3>
+                        <video style="transform: rotate(4deg);right:4%;" class="VideoEvent" src="./videoEvent/event6.mp4" autoplay muted>PAS DE VIDEO</video>
+                    </div>
+                    <h3 class="EventCredit">Lorsque les choix sont faits chaque élèves vont s'affronter sur l'épreuve qu'il a choisit</h3>
+                    <h3 class="EventCredit">Le classement final se fait en additionant le résultat de chaque défis</h3>
+                    <h3 class="EventCredit" style="text-decoration:underline">Résultats Festival:</h3>
+                    <ul style="list-style-type:square">
+                        <li>Classe A</li>
+                        <li>Classe B & Classe C</li>
+                        <li>Classe D</li>
+                    </ul>            
+                    <h1 class="TitleCredit" style="margin-top:10%">Fin kokoro &lt;3 </h1>
         </div>
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>

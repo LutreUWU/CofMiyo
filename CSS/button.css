@@ -38,7 +38,7 @@ body{
     transition: all 0.7s ease-in-out;
 }
 
-ul{
+section:nth-child(1) ul{
     font-family: "Noto serif";
     font-size: 1.5em;
     color: white;

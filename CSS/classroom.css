@@ -8,6 +8,7 @@
     overflow: hidden;
     animation: transitionText 1s;
     transition: all 1.5s ease-in-out;
+    z-index: 1;
 }
 
 .IntroductionDiv::before{
